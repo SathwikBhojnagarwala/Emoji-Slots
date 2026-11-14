@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmojiSlots - Arcade Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="game-container">
+
+        <header>
+            <p class="eyebrow">ARCADE SERIES 03</p>
+            <h1>🎰 Emoji<span>Slots</span></h1>
+            <p class="subtitle">Match the emojis. Hit the jackpot!</p>
+        </header>
+
+        <section class="machine">
+
+            <div class="score-panel">
+                <span>YOUR SCORE</span>
+                <strong id="score">100</strong>
+                <small>ARCADE POINTS</small>
+            </div>
+
+            <div class="reels" id="reels">
+                <div class="reel" id="reel1">🍒</div>
+                <div class="reel" id="reel2">🍋</div>
+                <div class="reel" id="reel3">🍇</div>
+            </div>
+
+            <p id="message" class="message">
+                Ready to play?
+            </p>
+
+            <button id="spinButton">
+                SPIN!
+            </button>
+
+            <p class="cost">Each spin costs 10 points</p>
+
+            <div class="rules">
+                <h3>HOW TO PLAY</h3>
+                <p>🎯 Start with 100 points</p>
+                <p>💰 Each spin costs 10 points</p>
+                <p>⭐ Match all 3 emojis to win 100 points!</p>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>EMOJISLOTS © 2026 | ARCADE EDITION</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #10111b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+.eyebrow {
+    color: #e8b44c;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: 42px;
+    letter-spacing: -1px;
+}
+
+h1 span {
+    color: #f4b942;
+}
+
+.subtitle {
+    color: #a7a8b7;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.machine {
+    background: #1c1e2c;
+    border: 2px solid #b88b35;
+    border-radius: 20px;
+    padding: 35px 25px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
+}
+
+.score-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 30px;
+}
+
+.score-panel span {
+    color: #a7a8b7;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.score-panel strong {
+    color: #f4b942;
+    font-size: 42px;
+}
+
+.score-panel small {
+    color: #77798b;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.reels {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    background: #11121c;
+    padding: 20px 12px;
+    border-radius: 14px;
+    border: 1px solid #393b4c;
+}
+
+.reel {
+    width: 100px;
+    height: 110px;
+    background: #292b3b;
+    border: 2px solid #e8b44c;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 52px;
+}
+
+.reel.spinning {
+    animation: shake 0.12s infinite alternate;
+    filter: blur(2px);
+}
+
+@keyframes shake {
+    from {
+        transform: translateY(-3px);
+    }
+
+    to {
+        transform: translateY(3px);
+    }
+}
+
+.message {
+    color: #f4b942;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 25px 0;
+    min-height: 22px;
+}
+
+#spinButton {
+    width: 100%;
+    padding: 17px;
+    background: linear-gradient(135deg, #f4b942, #d99121);
+    color: #171717;
+    border: none;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#spinButton:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(244, 185, 66, 0.3);
+}
+
+#spinButton:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.cost {
+    color: #9294a5;
+    font-size: 12px;
+    margin-top: 13px;
+}
+
+.rules {
+    text-align: left;
+    margin-top: 35px;
+    padding-top: 22px;
+    border-top: 1px solid #393b4c;
+}
+
+.rules h3 {
+    color: #f4b942;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.rules p {
+    color: #c3c4d0;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+footer {
+    color: #626477;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-top: 25px;
+}
+
+@media (max-width: 400px) {
+    .reel {
+        width: 80px;
+        height: 90px;
+        font-size: 42px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+}
